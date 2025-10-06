@@ -1,0 +1,120 @@
+\documentclass[letterpaper,10.5pt]{article}
+\usepackage{setspace}
+\setstretch{1.1}
+\setlength{\parindent}{0pt}
+
+% -------- Packages
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage[margin=1.2cm]{geometry}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+% -------- Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% -------- Section headers
+\titleformat{\section}
+  {\scshape\raggedright\large\bfseries}{}{0em}{}
+  [\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+% -------- Compact justified lists
+\setlist[itemize]{leftmargin=0.17in,label=\textbullet,itemsep=2pt,topsep=2pt,parsep=0pt,partopsep=0pt,before=\justifying}
+
+% -------- ATS compatibility
+\pdfgentounicode=1
+
+% -------- Header
+\newcommand{\ResumeHeader}{
+\begin{center}
+    {\Large \scshape \textbf{John Doe}} \\[1mm]
+    \footnotesize
+    City, State \;\textbar\;
+    +1 (000) 000-0000 \;\textbar\;
+    \href{mailto:example@email.com}{example@email.com} \;\textbar\;
+    \href{https://www.linkedin.com/in/username/}{linkedin.com/in/username} \;\textbar\;
+    \href{https://github.com/username}{github.com/username}
+\end{center}
+}
+
+% ====================== DOCUMENT ======================
+\begin{document}
+
+% ---------- HEADER
+\ResumeHeader
+
+% ======= EDUCATION =======
+\section{Education}
+
+\textbf{Example University} \hfill \textit{City, State}\\
+M.S. in Computer Science, GPA: 3.67/4.00 \hfill Aug 2024 -- May 2026
+\begin{itemize}\itemsep 1pt
+  \item Relevant Coursework: Software Engineering, Cyber Forensics, Advanced Database Management Systems, Software Validation, Data Structures \& Algorithms, Cloud Computing, DevOps Principles, Agile Development
+\end{itemize}
+
+% ========== PUBLICATIONS ==========
+\section{Publications}
+
+\textbf{Research Paper}\\
+Doe, J., Smith, A. K., \& Doe, J. (September 2025)
+
+% ======= TECHNICAL SKILLS =======
+\section{Technical Skills}
+\begin{itemize}\itemsep 1pt
+  \item \textbf{Programming Languages:} Python, C++, JavaScript, Swift, SQL
+  \item \textbf{Frameworks \& Platforms:} Spring Boot, Node.js, React, Next.js, Vue.js, REST \& GraphQL APIs, gRPC
+  \item \textbf{Cloud \& DevOps:} AWS (EC2, S3, EKS), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, CI/CD
+  \item \textbf{Databases \& Tools:} PostgreSQL, MongoDB, Redis, Kafka, Linux, Prometheus, Grafana, Postman, Git, JIRA
+  \item \textbf{Artificial Intelligence \& Security:} Machine Learning, Natural Language Processing, Generative AI, DevSecOps, Application Security, Authentication \& Authorization, Cryptography, Malware Analysis
+\end{itemize}
+
+% ======= EXPERIENCE =======
+\section{Experience}
+
+\textbf{Machine Learning Research Assistant} \hfill \textit{Example University, City, State}\\[-2pt]
+Example University \hfill Dec 2024 - Current
+\begin{itemize}\itemsep 1pt
+  \item Developed machine learning models and feature extraction pipelines for ARM/FPGA side-channel datasets to detect hardware Trojans, addressing noisy signal challenges and achieving \textbf{96\% classification accuracy}.
+  \item Engineered a synthetic data generation system to rebalance skewed datasets (10 Trojan vs. 20K non-Trojan samples), mitigating class imbalance issues and improving model generalization by \textbf{30\%}.
+  \item Automated denoising and preprocessing workflows in Python to handle inconsistent side-channel traces, enhancing trace consistency by \textbf{35\%} and ensuring reproducible experiments.
+\end{itemize}
+
+\textbf{Software Engineer Intern} \hfill \textit{TechCorp, City, Country}\\[-2pt]
+TechCorp \hfill Jan 2023 -- May 2024
+\begin{itemize}\itemsep 1pt
+  \item Built secure and scalable REST and gRPC microservices in Java (Spring Boot) for payment and wallet systems to handle high transaction volumes, optimizing API throughput and improving performance by \textbf{20\%}.
+  \item Deployed distributed microservices using Kafka, Redis, and AWS EKS to address system downtime, maintaining \textbf{99.9\% uptime} and enhancing reliability through proactive monitoring with Prometheus and Grafana.
+  \item Implemented CI/CD pipelines with Jenkins and GitHub Actions for Dockerized applications, resolving manual release bottlenecks and reducing deployment time by \textbf{30\%}.
+\end{itemize}
+
+% ======= PROJECTS =======
+\section{Projects}
+
+\textbf{Serverless Deployment Platform} \hfill \\
+\textbf{Tech Stack:} AWS, System Design, Docker, Redis, Kafka, PostgreSQL, Node.js, Next.js, Linux, CI/CD, Prometheus, Grafana
+\begin{itemize}\itemsep 1pt
+  \item Built a serverless deployment platform to automate build, test, and hosting workflows, addressing slow manual release cycles and reducing deployment latency by \textbf{60\%} for over 50 concurrent deployments.
+  \item Designed fault-tolerant microservices with continuous monitoring using Prometheus and Grafana, improving platform reliability and incident response time.
+\end{itemize}
+
+\textbf{AI-Powered Flight Meta-Search Platform} \hfill \\
+\textbf{Tech Stack:} FastAPI, SwiftUI (iOS), PostgreSQL, Docker, OpenRouter API, AWS
+\begin{itemize}\itemsep 1pt
+  \item Built an AI-driven flight meta-search platform integrating third-party APIs with 2.2 s p95 latency via Redis caching and async I/O. 
+  \item Trained ML models on 250K+ fares (XGBoost, GBR) for 85\% price accuracy and 18\% cost savings.
+  \item Deployed FastAPI microservices on AWS ECS with Terraform and CI/CD. Added LLM chat assistant for personalized recommendations, boosting engagement by 35\%.
+\end{itemize}
+
+\end{document}
