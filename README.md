@@ -1,73 +1,23 @@
----
 
-## 🛠️ Compilation Instructions
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __ _ _ _ _ _ _ _ _ _ _ _ __ _ _ _ _ _ _
 
-### 🖥️ Using Command Line
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/latex-resume.git
-   cd latex-resume
-````
+🚀 Steps to Execute the Code on Overleaf
 
-2. Compile the LaTeX source to PDF:
+Follow these steps to compile and preview your LaTeX resume on Overleaf
+:
 
-   ```bash
-   pdflatex resume.tex
-   ```
-3. The output `resume.pdf` will be generated in the same directory.
+1. Go to Overleaf.com and log in or create a free account.
 
-### 🌐 Using Overleaf
+2. Click on “New Project” → “Upload Project.”
 
-1. Go to [https://www.overleaf.com/](https://www.overleaf.com/)
-2. Click **New Project → Upload Project**
-3. Upload the `resume.tex` file
-4. Compile directly in the browser
+3. Upload the file resume.tex (and any supporting files if applicable).
 
----
+4. Once uploaded, Overleaf will automatically compile your LaTeX source.
 
-## 🧰 Features
+5. If it doesn’t compile automatically, click the “Recompile” button (top center).
 
-* ✅ Clean, ATS-friendly design
-* ✅ Compact and professional layout
-* ✅ Customizable sections (Education, Experience, Projects, Skills, Publications)
-* ✅ Modern LaTeX packages for formatting and spacing
+6. Your resume will be rendered as a PDF on the right-hand side of the screen.
 
----
+7. Download the PDF by clicking “Download PDF” from the menu.
 
-## 🧑‍💻 Customization
-
-To personalize this resume:
-
-* Replace placeholder data in `resume.tex` (e.g., name, email, LinkedIn, university, etc.)
-* Adjust margins or font sizes in the `geometry` and `titlesec` sections if needed
-* Add new sections using:
-
-  ```latex
-  \section{Your Section Title}
-  ```
-
----
-
-## 🪪 License
-
-This project is open-source under the [MIT License](LICENSE).
-You are free to use, modify, and distribute this template for personal or professional purposes.
-
----
-
-## ⭐ Acknowledgments
-
-Inspired by open-source LaTeX resume templates and improved for clarity, ATS optimization, and technical roles.
-
-If you found this useful, consider giving the repo a ⭐ on GitHub!
-
----
-
-**Author:** *John Doe*
-**Version:** 1.0
-**License:** MIT
-
-```
-
-Would you like me to include a short `LICENSE` file (MIT license) too so your repo looks complete and professional?
-```
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __ _ _ _ _ _ _ _ _ _ _ _ __ _ _ _ _ _ _
